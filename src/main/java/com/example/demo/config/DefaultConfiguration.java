@@ -46,5 +46,6 @@ public class DefaultConfiguration {
 
     //JASYPT_ENCRYPTOR_PASSWORD=password
     //http://www.jasypt.org/
+    //https://github.com/ulisesbocchio/jasypt-spring-boot
 
 }
