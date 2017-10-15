@@ -45,5 +45,6 @@ public class DefaultConfiguration {
 //    }
 
     //JASYPT_ENCRYPTOR_PASSWORD=password
+    //http://www.jasypt.org/
 
 }
