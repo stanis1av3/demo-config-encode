@@ -15,7 +15,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class DefaultConfiguration {
-
+    //JASYPT_ENCRYPTOR_PASSWORD=password
+    //http://www.jasypt.org/
+    //https://github.com/ulisesbocchio/jasypt-spring-boot
 
     @Bean(name="jasyptStringEncryptor")
     public StringEncryptor stringEncryptor() {
@@ -43,8 +45,6 @@ public class DefaultConfiguration {
 //        return new MyEncryptablePropertyResolver(password.toCharArray());
 //    }
 
-    //JASYPT_ENCRYPTOR_PASSWORD=password
-    //http://www.jasypt.org/
-    //https://github.com/ulisesbocchio/jasypt-spring-boot
+
 
 }
