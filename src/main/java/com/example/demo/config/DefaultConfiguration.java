@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
 public class DefaultConfiguration {
 
 
-    @Bean("jasyptStringEncryptor")
+    @Bean(name="jasyptStringEncryptor")
     public StringEncryptor stringEncryptor() {
         PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         SimpleStringPBEConfig config = new SimpleStringPBEConfig();
@@ -40,7 +40,6 @@ public class DefaultConfiguration {
 //    @Bean(name="encryptablePropertyResolver")
 //    EncryptablePropertyResolver encryptablePropertyResolver(@Value("${jasypt.encryptor.password}") String password) {
 //
-//        String password = "MYPAS_WORD";
 //        return new MyEncryptablePropertyResolver(password.toCharArray());
 //    }
 
