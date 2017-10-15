@@ -24,8 +24,10 @@ public class DemoConfigEncodeApplicationTests {
     public void contextLoads() {
 
         String encrypted = encryptor.encrypt("HI THIS IS A MESSAGE");
-        System.out.println( encrypted );
-        System.out.println( encryptor.decrypt(encrypted));
+        System.out.println(encrypted);
+
+        String decrypted = encryptor.decrypt(encrypted);
+        System.out.println(decrypted);
     }
 
     @Test
